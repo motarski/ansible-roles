@@ -1,0 +1,12 @@
+- name: Create folder shell style idempotency
+  shell: > 
+    [ -d "/home/vagrant/exists" ] && echo -n "EXISTS" ||
+    mkdir -p /home/vagrant/exists
+  register: folder_exists
+  changed_when: folder_exists.stdout != 'EXISTS'
+
+- name: Show content of folder_exist register
+  debug:
+    msg: "folder_exists == {{ folder_exists.stdout }}"
+
+
