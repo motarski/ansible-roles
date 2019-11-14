@@ -3,8 +3,6 @@ galaxy_info:
   description: This is a role to check idempotency
   company: Home Lab
 
-owner: Ivan
-
   license: license (Internal)
 
   min_ansible_version: 2.3
