@@ -2,7 +2,8 @@ galaxy_info:
   author: Ivan Barjaktarov
   description: This is a role to check idempotency
   company: Home Lab
-  owner: Ivan
+
+owner: Ivan
 
   license: license (Internal)
 
